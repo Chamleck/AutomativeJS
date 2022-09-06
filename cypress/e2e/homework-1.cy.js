@@ -142,5 +142,5 @@ it.skip("Примеры поиска элементов",() => {
     cy.contains('Horizontal form','nb-card').find([type="Email"])
 
 
-
+    
 })
