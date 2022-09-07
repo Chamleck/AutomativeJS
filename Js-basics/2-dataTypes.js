@@ -101,4 +101,11 @@ const objArr2 = {
 console.log(objArr2.a);
 
 objArr2.a = 5;
+
+console.log(objArr2.a);
+
+console.log(objArr2.a);
+
+objArr2.a = 5;
+
 console.log(objArr2.a);
