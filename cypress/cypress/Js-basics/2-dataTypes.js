@@ -69,3 +69,36 @@ let salary = {
     'Anna': 1000,
     'Vlada': 1200
 };
+let salaryArr = ['Anna', 1000, 'Vlada', 1200];
+
+let someArr = [1, 2, 3];
+let objArr = {
+    0: 1,
+    1: 2,
+    2: 3
+};
+console.log(someArr[0]);
+console.log(objArr[0]);
+
+let objArr1 = {
+    a: 1,
+    b: 2,
+    c: 3
+};
+console.log(objArr1['a']);
+
+let num = 1;
+console.log(num);
+num = 2;
+console.log(num);
+
+const objArr2 = {
+    a: 1,
+    b: 2,
+    c: 3
+};
+
+console.log(objArr2.a);
+
+objArr2.a = 5;
+console.log(objArr2.a);
