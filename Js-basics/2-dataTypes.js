@@ -106,3 +106,59 @@ console.log(objArr2.a);
 
 objArr2.a = 5;
 
+const objArr3 =
+{
+    a:1,
+    b:2,
+    c:{
+        someKey:{
+
+            someKey:12
+        }
+    },
+    d:{
+        someKey:[1,2,3]
+    }
+};
+//обращаемся к с в объекте далее к соме кей и к сомкей внутри него
+console.log (objArr3,c.someKey.someKey);
+//обращаемся к объекту d и внутри него к второму элементу массива который называется соме кей
+console.log (objArr3.d.someKey[1]);
+
+let someText ='Hello World';
+//отобразить количество символов
+console.log(someText.length);
+//отобразить от нулевого до 4 символа
+console.log(someText.substring(0,4));
+//изменить регистр символов
+console.log(someText.toLowerCase);
+console.log(someText.toUpperCase);
+//отобразит какой символ по счету
+console.log(someText.indexOf('o'));
+
+console.log(someText.substring(0,someText.length -3));
+//оставляет текст с первого символа до 4
+console.log(someText.slice(0,4));
+//удаляет пробелы и переносы строки в начале и конце
+console.log(someText.trim());
+//выводит символ по его индексу(счету)
+console.log(someText.charAt(1));
+//выводит символ по индексу
+console.log(someText[1]);
+
+
+//Массивы
+//наполняем массив косвеено командой пуш
+let myArr =[];
+myArr.push('Доброго вечора');
+myArr.push('Доброго ранку');
+
+console.log(myArr);
+//возвращает длинну массива
+console.log(myArr.length);
+//соединяет данн в массиве
+console.log(myArr.join());
+//добавили пробел
+console.log(myArr.join(" "));
+//выводит последнее значение
+console.log(myArr.pop());
