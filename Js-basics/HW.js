@@ -44,8 +44,75 @@
     https://www.kyivdictionary.com/uk/words/conjugation/?word=%D0%BC%D0%B5%D1%82%D1%80&lang=uk
 */
 
-
+//1
 const hamburger = 4
 const fries = 1
-if(hamburger2 >= 4 && fries){console.log('Ми поїли')}
+if(hamburger >= 4 && fries){console.log('Ми поїли')}
 else{console.log('Ми йдемо в інше кафе')};
+
+//2
+const price = 1000
+if(price>=1000&&price<=1900){console.log('price is between 1000 and 1900')}
+else{console.log('not between 1000 and 1900')};
+
+//3
+const price1 = 1000
+if(price1>=!1000&&price1<=!1900){console.log('not between 1000 and 1900')}
+else{console.log('price is between 1000 and 1900')};
+
+4//
+const num=1
+if(num==1){console.log('spring')}
+else if(num==2){console.log('summer')}
+else if(num==3){console.log('autumn')}
+else{console.log('winter')};
+
+//5
+var a=1
+var b=2
+var c=3
+if(a < b && c > b){console.log('b is medium')}
+else{console.log('b is not medium')};
+
+//6
+let weekday = 5;
+switch(weekday){
+    case 1:
+        console.log('monday')
+        break;
+    case 2:
+        console.log('tuesday')
+        break;
+    case 3:
+        console.log('wednesday')
+        break;
+    case 4:
+        console.log('thursday')
+        break;
+    case 5:
+        console.log('friday')
+            break;
+     case 6:
+        console.log('saturday')
+                break;
+     case 7:
+        console.log('friday')
+                    break;
+};
+
+//7
+let par1 = 2;
+let par2 = 4;
+switch(3){
+    case 1:
+        console.log(par1 + par2)
+        break; 
+    case 2:
+            console.log(par2 - par1)
+        break; 
+    case 3:
+            console.log(par2 * par1)
+        break;
+    case 4:
+            console.log(par2 / par1)
+};
