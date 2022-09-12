@@ -116,3 +116,12 @@ switch(3){
     case 4:
             console.log(par2 / par1)
 };
+
+//8
+let someText = 'Hello'
+//набор символов
+console.log(someText.replace(/[eo]/ig,''));
+//или или
+console.log(someText.replace(/[e|o]/ig,''));
+//и
+console.log(someText.replace(/[e&o]/ig,''));

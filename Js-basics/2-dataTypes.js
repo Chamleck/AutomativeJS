@@ -88,7 +88,7 @@ let objArr1 = {
     a: 1,
     b: 2,
     c: 3
-};
+}
 console.log(objArr1['a']);
 
 let num = 1;
