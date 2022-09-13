@@ -125,3 +125,41 @@ console.log(someText.replace(/[eo]/ig,''));
 console.log(someText.replace(/[e|o]/ig,''));
 //и
 console.log(someText.replace(/[e&o]/ig,''));
+
+//9
+
+let distance = 1;
+let kilometers = distance / 1000;
+if(kilometers <= 4 && distance !== 1){
+    console.log(distance +' метри - це ' + kilometers + ' кілометри')
+}else if(  kilometers === 1 || kilometers === 21 || 
+    kilometers === 31 || kilometers === 41 ||
+    kilometers === 51 || kilometers === 61 ||
+    kilometers === 71 || kilometers === 81 ||
+    kilometers === 91 || kilometers === 101 ||
+    distance === 1 || distance === 21 ||
+    distance === 31 || distance === 41 ||
+    distance === 51 || distance === 61 ||
+    distance === 71 || distance === 81 ||
+    distance === 91 || distance === 101
+) {
+console.log("second " + distance +' метр - це ' + kilometers + ' кілометр')
+} else {
+console.log(distance +' метрів - це ' + kilometers + ' кілометрів')
+}
+//Теж саме за допомогою функції
+let distance = 31;
+let kilometers = distance / 1000;
+
+if (distance <= 4 && distance !== 1) {
+    console.log(distance +' метри - це ' + kilometers + ' кілометри')
+} else if(isLastNumber_1(distance) || isLastNumber_1(kilometers)) {
+ console.log(distance +' метр - це ' + kilometers + ' кілометр')
+} else {
+    console.log(distance +' метрів - це ' + kilometers + ' кілометрів')
+}
+// distance_1 это аргумент который будет принимать в себя значение которое будет находится справа в скобках от функции
+function isLastNumber_1(distance_1) {
+// вернуть номером то что будет происходить в скобках (аргумент приобразуется в строку, разделяется в массив, и отображается в обратном порядке, обращаемся к первому элементу массива и проверяем равен ли он 1)
+    return Number(distance_1.toString().split("").reverse()[0]) === 1;
+}
