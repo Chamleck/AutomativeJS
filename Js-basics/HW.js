@@ -50,22 +50,47 @@ const fries = 1
 if(hamburger >= 4 && fries){console.log('Ми поїли')}
 else{console.log('Ми йдемо в інше кафе')};
 
+//1 Function solution
+cafeFunc=(hamburger, fries)=>{
+    if(hamburger >= 4 && fries){console.log('Ми поїли')}
+    else{console.log('Ми йдемо в інше кафе')};
+}
+cafeFunc(4,1)
 //2
 const price = 1000
 if(price>=1000&&price<=1900){console.log('price is between 1000 and 1900')}
 else{console.log('not between 1000 and 1900')};
-
+//2 Function solution
+priceFunc=(price)=>{
+    if(price>=1000&&price<=1900){console.log('price is between 1000 and 1900')}
+    else{console.log('not between 1000 and 1900')};
+}
+priceFunc(1000)
 //3
 const price1 = 1000
-if(price1>=!1000&&price1<=!1900){console.log('not between 1000 and 1900')}
+if(price1 != 1001 && price1 != 1899 && price1 >= 1900 && price1 <= 1000){console.log('not between 1000 and 1900')}
 else{console.log('price is between 1000 and 1900')};
+//3 Function solution
+priceFunc1=(price1)=>{
+    if(price1 != 1001 && price1 != 1899 && price1 >= 1900 && price1 <= 1000){console.log('not between 1000 and 1900')}
+    else{console.log('price is between 1000 and 1900')};
+}
+priceFunc1(1000)
 
-4//
+//4
 const num=1
 if(num==1){console.log('spring')}
 else if(num==2){console.log('summer')}
 else if(num==3){console.log('autumn')}
 else{console.log('winter')};
+//4 Function solution
+seasonFunc=(num)=>{
+    if(num==1){console.log('spring')}
+else if(num==2){console.log('summer')}
+else if(num==3){console.log('autumn')}
+else{console.log('winter')};
+}
+seasonFunc(1)
 
 //5
 var a=1
@@ -73,6 +98,12 @@ var b=2
 var c=3
 if(a < b && c > b){console.log('b is medium')}
 else{console.log('b is not medium')};
+//5 Function solution
+compareFunc=(a,b,c)=>{
+    if(a < b && c > b){console.log('b is medium')}
+    else{console.log('b is not medium')};
+}
+compareFunc(1,2,3)
 
 //6
 let weekday = 5;
@@ -99,11 +130,38 @@ switch(weekday){
         console.log('friday')
                     break;
 };
-
+//6 Function solution
+const WeekFunction =(weekday) =>{
+    switch(weekday){
+        case 1:
+            console.log('monday')
+            break;
+        case 2:
+            console.log('tuesday')
+            break;
+        case 3:
+            console.log('wednesday')
+            break;
+        case 4:
+            console.log('thursday')
+            break;
+        case 5:
+            console.log('friday')
+                break;
+         case 6:
+            console.log('saturday')
+                    break;
+         case 7:
+            console.log('friday')
+                        break;
+    }
+}
+    WeekFunction(1)
 //7
 let par1 = 2;
 let par2 = 4;
-switch(3){
+let caSe = 1
+switch(caSe){
     case 1:
         console.log(par1 + par2)
         break; 
@@ -116,7 +174,23 @@ switch(3){
     case 4:
             console.log(par2 / par1)
 };
-
+//7 function solution
+const CalcFunction =(par1, par2, caSe) =>{
+    switch(caSe){
+        case 1:
+            console.log(par1 + par2)
+            break; 
+        case 2:
+                console.log(par2 - par1)
+            break; 
+        case 3:
+                console.log(par2 * par1)
+            break;
+        case 4:
+                console.log(par2 / par1)
+    }
+}
+CalcFunction(2,4,3)
 //8
 let someText = 'Hello'
 //набор символов
@@ -126,11 +200,39 @@ console.log(someText.replace(/[e|o]/ig,''));
 //и
 console.log(someText.replace(/[e&o]/ig,''));
 
+//8 solved with function
+// Задаем параметр функции в скобках который потом станет аргументом когда обращаясь к функции будет вставленно значение в скобках рядом
+// с названием функции, команда return возвращает ту переменную/ее результат которую мы укажем следом
+const ReplaceFunction = (someText) =>{
+
+    let result = someText.replace(/[eo]/ig,'')
+
+    return result
+}
+console.log(ReplaceFunction('Hello'))
+//Без использования ретерн но передавая аргумент в параметр функции
+/*
+const ReplaceFunction = (someText) =>{
+
+    console.log(someText.replace(/[eo]/ig,''))
+
+}
+ ReplaceFunction('Hello')
+*/
+/*
+function Replace(){
+    someText = 'Hello'
+    console.log(someText.replace(/[eo]/ig,''))
+    
+}
+Replace()
+*/
+
 //9
 
 let distance = 1;
 let kilometers = distance / 1000;
-if(kilometers <= 4 && distance !== 1){
+if(kilometers <= 4 && kilometers > 1||distance <=4 && distance > 1){
     console.log(distance +' метри - це ' + kilometers + ' кілометри')
 }else if(  kilometers === 1 || kilometers === 21 || 
     kilometers === 31 || kilometers === 41 ||
@@ -151,7 +253,8 @@ console.log(distance +' метрів - це ' + kilometers + ' кілометр�
 let distance = 31;
 let kilometers = distance / 1000;
 
-if (distance <= 4 && distance !== 1) {
+calc=(distance,kilometers= distance/ 1000)=>{
+if (kilometers <= 4 && kilometers > 1||distance <= 4 && distance > 1 || isLastNumber_2(distance)) {
     console.log(distance +' метри - це ' + kilometers + ' кілометри')
 } else if(isLastNumber_1(distance) || isLastNumber_1(kilometers)) {
  console.log(distance +' метр - це ' + kilometers + ' кілометр')
@@ -161,5 +264,16 @@ if (distance <= 4 && distance !== 1) {
 // distance_1 это аргумент который будет принимать в себя значение которое будет находится справа в скобках от функции
 function isLastNumber_1(distance_1) {
 // вернуть номером то что будет происходить в скобках (аргумент приобразуется в строку, разделяется в массив, и отображается в обратном порядке, обращаемся к первому элементу массива и проверяем равен ли он 1)
-    return Number(distance_1.toString().split("").reverse()[0]) === 1;
+    return Number(distance_1.toString().split("").reverse()[0]) === 1 &&
+           Number(distance_1.toString().split("").reverse()[1]) != 1 &&
+           Number(distance_1.toString().split("").reverse()[1]) != 0;
 }
+function isLastNumber_2(distance_2) {
+      return Number(distance_2.toString().split("").reverse()[0]) <= 4 && 
+             Number(distance_2.toString().split("").reverse()[1] ) > 1 && 
+             Number(distance_2.toString().split("").reverse()[0] ) != 1&& 
+             Number(distance_2.toString().split("").reverse()[0] ) != 0;
+            
+}
+}
+calc(30)

@@ -20,7 +20,7 @@ function sum(a,b){
 let d = 1;
 let f =3;
 sum(3, 10);
-sum(a, b);
+sum(d, f);
 
 function sum2(a,b){
     let c = a + b;
