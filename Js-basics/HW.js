@@ -128,7 +128,7 @@ console.log(someText.replace(/[e&o]/ig,''));
 
 //9
 
-let distance = 1;
+let distance = 100;
 let kilometers = distance / 1000;
 if(kilometers <= 4 && distance !== 1){
     console.log(distance +' метри - це ' + kilometers + ' кілометри')
@@ -148,7 +148,7 @@ console.log("second " + distance +' метр - це ' + kilometers + ' кіло�
 console.log(distance +' метрів - це ' + kilometers + ' кілометрів')
 }
 //Теж саме за допомогою функції
-let distance = 31;
+let distance = 211;
 let kilometers = distance / 1000;
 
 if (distance <= 4 && distance !== 1) {
