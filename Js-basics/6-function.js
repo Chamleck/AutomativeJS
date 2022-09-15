@@ -112,7 +112,7 @@ function first(){
         console.log('first')
     }, 3000)
 }
-
+first()
 function second(){
     console.log('Second');
 }
