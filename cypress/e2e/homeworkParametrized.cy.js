@@ -15,6 +15,7 @@ const params = [
 
 
 
+
     params.forEach(({login, password, expected_l, expected_p}) => {
         it(`Type ${login} in login field and ${password} to password field`, () => {
             cy.visit ('https://sanitarskyi-ngx-admin.herokuapp.com');
