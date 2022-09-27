@@ -3,6 +3,7 @@
 
 
 
+
 const params = [
     {login: ['1', '2', '3'], expected_l: ['1' , '2', '3'], 
     password: ['1234qwert', 'qwert1234', 'qwertyytrewq'], expected_p: ['1234qwert', 'qwert1234', 'qwertyytrewq']},
@@ -36,3 +37,4 @@ const params = [
             cy.get('#exampleInputPassword1').should('contain.value', expected_p[2]);
         })
     })
+
